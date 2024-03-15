@@ -12,7 +12,19 @@ const matriz_code = [
 ];
 
 function btnEncriptar(){
-    const texto = campo_texto.value;
-    console.log(texto);
+    const texto = encriptar(campo_texto.value);
+    campo_mensaje.value = texto;
 }
 
+function encriptar(fraseEncriptada){
+    for(let i=0; i < matriz_code.length ; i++){
+        if(fraseEncriptada.includes(matriz_code[i][0])){
+            fraseEncriptada = fraseEncriptada.replaceAll(
+                matriz_code[i][0],
+                matriz_code[i][1]
+            )
+        }
+
+    }
+    return fraseEncriptada;
+}
