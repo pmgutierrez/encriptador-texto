@@ -61,6 +61,11 @@ main{
 .mensaje:focus{
   outline: none;
 }
+ h6{
+    background: black;
+    color: white;
+    margin-left: 45px;
+ }
 
 .botones{
   display: flex;
