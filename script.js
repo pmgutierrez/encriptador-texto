@@ -48,3 +48,9 @@ function desencriptar(fraseEncriptada){
     }
     return fraseEncriptada;
 }
+
+function copiar(){
+	let contenido = document.querySelector("#campo-mensaje");
+	contenido.select();
+	document.execCommand("copy");
+}
