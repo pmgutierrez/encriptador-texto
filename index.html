@@ -8,21 +8,21 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
-    <title>Encriptador</title>
+    <title>Encriptador Texto Matrix</title>
 </head>
 <body>
-    <header>
+    <header class="cabecera">
         <img src="./imagenes/logo Alura.png" alt="Logo Alura" class="logo">
+        <h1>MATRIX</h1>
     </header>
     <main>
         <section>
-            <textarea id="campo-texto" class="text-area" cols="30" rows="10"></textarea>
-            <div>
-                <h6 class="informacion">Solo letras minusculas y sin acentos</h6>
+            <textarea id="campo-texto" class="text-area" cols="30" rows="10" placeholder="Ingrese su texto"></textarea>
+            <div>              <h6 class="informacion">Solo letras minusculas y sin acentos</h6>
             </div>
             <div class="botones">
                 <button onclick="btnEncriptar()" class="btn-encriptar">Encriptar</button>
-                <button class="btn-desencriptar">Desencriptar</button>
+                <button onclick="btnDesencriptar()" class="btn-desencriptar">Desencriptar</button>
             </div>
         </section>
         <section>
